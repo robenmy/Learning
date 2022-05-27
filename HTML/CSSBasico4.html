@@ -1,0 +1,118 @@
+<!--
+    Cambia la posición relativa de un elemento
+CSS trata cada elemento HTML como su propia caja, 
+esto es a lo que usualmente se refiere como el 
+Modelo de Caja de CSS. 
+
+Los elementos bloque automáticamente empiezan en una nueva 
+línea (piensa en las etiquetas título, párrafos y divs) 
+mientras que los elementos en línea se ubican entre el contenido
+ alrededor (como imágenes o spans). El diseño por defecto de 
+ los elementos en esta manera se llama el flujo normal de 
+ un documento, pero CSS ofrece la propiedad position para sobreescribirlo.
+
+ Cuando la posición de un elemento se establece a relative,
+  te permite especificar como CSS lo moverá relativo a su 
+  posición actual dentro del flujo normal de la página. Se 
+  empareja con las propiedades de desplazamiento CSS de 
+  left o right, y top o bottom. 
+  Estas dicen cuántos pixeles, porcentajes, o ems se debe 
+  mover el elemento lejos de donde esté normalmente posicionado.
+   El siguiente ejemplo mueve el párrafo 10 pixeles lejos 
+   de la parte inferior:
+
+   Cambiando la posición de un elemento a relative no lo quita del flujo norma por que que se puede sobreposicionar
+-->
+
+<style>
+p {
+  position: relative;
+  bottom: 10px; /*cuántos pixeles, porcentajes, o ems se debe 
+  mover el elemento*/
+}
+
+h2 {
+    position: relative;
+    top: 10px;
+    right: 15px;
+  }
+</style>
+
+<!--
+     Bloquea un elemento a la ventana del navegador con el posicionamiento fijo
+   El siguiente esquema de diseño que ofrece CSS es la posición fixed, que es un tipo 
+   de posicionamiento absoluto que bloquea un elemento relativo a la ventana del navegador. 
+
+   Una diferencia clave entre las posiciones fixed y absolute es que un elemento con 
+   una posición fija (fixed) no se moverá cuando el usuario se desplace.
+-->
+
+<!--
+    Empuja elementos hacia la izquierda o hacia la derecha con la propiedad float
+La siguiente herramienta de posicionamiento en realidad no usa position,
+ sino que establece la propiedad float de un elemento. Los elementos flotantes
+ se eliminan del flujo normal de un documento y se empujan a left o right de 
+su elemento padre contenedor. Se usa comúnmente con la propiedad width para 
+especificar cuanto espacio horizontal requiere el elemento flotante.
+-->
+
+<style>
+    .elemet{
+        float:right; /*left*/
+        width: 10px; /*especificar cuanto espacio horizontal requiere el elemento flotante*/
+    }
+</style>
+
+<!--
+    Cambia la posición de los elementos superpuestos con la propiedad z-index
+Cuando los elementos son posicionados para superponerse 
+(i.e. usando position: absolute | relative | fixed | sticky), 
+el elemento que viene después dentro del marcado HTML aparecerá, 
+por defecto, encima de los otros elementos. Sin embargo, la propiedad
+ z-index puede especificar el orden de cómo los elementos están apilados
+ unos sobre otros. Debe ser un entero (i.e. un número entero y no un decimal),
+ y los elementos que mayor valor tengan en z-index serán movidos más 
+arriba en la pila de elementos que aquellos con valores menores.
+-->
+
+<style>
+      div {
+    width: 60%;
+    height: 200px;
+    margin-top: 20px;
+  }
+
+  .first {
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+
+  }
+      .second {
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    z-index: 1;
+  }
+</style>
+
+<!--
+    Centra un elemento horizontalmente usando la propiedad margin
+Otra técnica de posicionamiento consiste en centrar un elemento de
+ bloque horizontalmente. Una manera de hacer esto es que margin
+  tenga valor auto.
+
+Este método también funciona para imágenes. Las imágenes son 
+elementos en línea de forma predeterminada, pero se pueden cambiar
+ a elementos de bloque cuando se establece la propiedad display en block.
+-->
+<style>
+    div {
+      background-color: blue;
+      height: 100px;
+      width: 100px;
+      margin: auto;
+  
+    }
+  </style>

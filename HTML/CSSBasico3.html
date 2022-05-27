@@ -1,0 +1,80 @@
+<!--
+    Crea un balance visual usando la propiedad text-align
+.................................................................................
+El texto es frecuentemente una gran parte del contenido web. 
+CSS tiene múltiples opciones para alinearlo con la propiedad text-align.
+
+text-align: justify; espacia el texto para que cada línea tenga el mismo ancho.
+
+text-align: center; centra el texto
+
+text-align: right; alinea el texto hacia la derecha
+
+Y text-align: left; (opción por defecto) alinea el texto hacia la izquierda
+-->
+
+<style>
+    .texto {
+        font-weight: bold; /*texto en negrita*/
+        text-decoration: underline; /*subrayar texto*/
+        text-decoration: line-through; /*tachar texto*/
+        font-style: italic;
+    }
+
+</style>
+<hr> <!--crea una linea-->
+
+<style>
+    .color{
+        background-color: rgba(45, 45, 45, 0.1);
+    }
+    /*
+    rgba significa:
+  r = red
+  g = green
+  b = blue
+  a = alfa/nivel de opacida*/
+</style>
+
+<style>
+     .box {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        opacity: 0.5; /*Disminuir la opacidad de un elemento*/
+    }
+    /*
+    La propiedad box-shadow toma valores para
+
+offset-x (qué tan lejos extender la sombra horizontalmente desde el elemento),
+offset-y (qué tan lejos extender la sombra verticalmente desde el elemento),
+blur-radius,
+spread-radius y
+color, en ese orden.
+Los valores blur-radius y spread-radius son opcionales.
+    */
+</style>
+
+<style>
+  
+    .texto {
+        text-transform:lowercase; /*cambiar la apariencia del texto: lowercase, uppercase,capitalize, initial, inherit, none*/
+        font-style: italic;
+        font-size: 10px;
+        font-weight: 2px; /*establece que tan gruesos o delgados son los caracteres en una sección de texto.*/
+        line-height:5px; /*cambiar la altura de cada línea en un bloque de texto*/
+    }
+
+
+</style>
+
+<!--
+    HOVER
+Ajusta el hover de una etiqueta anchor
+Este desafío mostrará el uso de las pseudo-clases. 
+Una pseudo-clase es una palabra clave que se puede 
+agregar a los selectores para seleccionar un estado
+ específico de un elemento
+
+ a:hover {
+  color: red;
+}
+-->

@@ -1,0 +1,41 @@
+<h2>Usa selectores de atributos para dar estilo a elementos</h2>
+<p>usarás el selector de atributos [attr=value] para aplicar estilo . 
+    Este selector busca estilos que tengan un valor de atributo específico.
+     Por ejemplo, el código a continuación cambia los márgenes de todos los
+      elementos que tengan el atributo type con el valor radio:</p>
+
+      <style>
+      [type='radio'] {
+        margin: 20px 0px 20px 0px;
+      }
+      
+      </style>
+
+      <!--
+          Unidades absolutas y relativas de medida
+          Absolute length units are not recommended for use on screen, because screen sizes vary so much. 
+
+          Las unidades de longitud absoluta aproximan la medición real sobre una pantalla, 
+          pero existen cierta variación que depende de la resolución de la pantalla utilizada.
+
+          Las unidades relativas, como em o rem son relativas a otro valor de longitud. 
+          Por ejemplo, em se basa en el tamaño de fuente de un elemento. Si la utilizas para
+           establecer la propiedad font-size, es relativa al font-size del elemento padre.
+
+           em 	Relative to the font-size of the element (2em means 2 times the size of the current font)
+           rem 	Relative to font-size of the root element
+           vw 	Relative to 1% of the width of the viewport*
+           vh 	Relative to 1% of the height of the viewport*
+           vmin 	Relative to 1% of viewport's* smaller dimension
+           vmax 	Relative to 1% of viewport's* larger dimension
+           % 	Relative to the parent element
+
+           Tip: The em and rem units are practical in creating perfectly scalable layout!
+      -->
+
+      <!--Sobreescribe todos los demás estilos usando !important-->
+      <style>
+          .body {
+              color: red !important;
+          }
+      </style>
