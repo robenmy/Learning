@@ -1,0 +1,15 @@
+Store Data with Sass Variables
+
+In Sass, variables start with a $ followed by the variable name.
+=====================================================================
+Here are a couple examples:
+
+$main-fonts: Arial, sans-serif;
+$headings-color: green;
+
+//To use variables:
+h1 {
+  font-family: $main-fonts;
+  color: $headings-color;
+}
+

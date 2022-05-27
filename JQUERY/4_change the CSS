@@ -1,0 +1,9 @@
+Change the CSS of an Element Using jQueryPassed
+
+We can also change the CSS of an HTML element directly with jQuery.
+
+jQuery has a function called .css() that allows you to change the CSS of an element.
+
+Here's how we would change its color to blue:
+
+$("#target1").css("color", "blue");

@@ -1,0 +1,20 @@
+target element
+
+by html element
+$("button")
+
+by css class
+$(".well")
+
+by id
+$("#button1")
+
+==========================================================================
+<script>
+  $(document).ready(function() {
+
+$("button").addClass("animated");
+$(".btn").addClass("shake");
+$("#target1").addClass("btn-primary");
+  });
+</script>
